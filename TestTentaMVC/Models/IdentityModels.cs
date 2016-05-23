@@ -29,5 +29,9 @@ namespace TestTentaMVC.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<TestTentaMVC.Models.Artist> Artists { get; set; }
+
+        public System.Data.Entity.DbSet<TestTentaMVC.Models.Song> Songs { get; set; }
     }
 }
